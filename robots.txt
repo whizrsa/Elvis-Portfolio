@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://whizrsa.github.io/Elvis-Portfolio/sitemap.xml
