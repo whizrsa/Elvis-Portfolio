@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://whizrsa.github.io/Elvis-Portfolio/</loc>
+  <lastmod>2025-10-14T22:19:39+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://whizrsa.github.io/Elvis-Portfolio/index.html</loc>
+  <lastmod>2025-10-14T22:19:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://whizrsa.github.io/Elvis-Portfolio/service-web-development.html</loc>
+  <lastmod>2025-10-14T22:19:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://whizrsa.github.io/Elvis-Portfolio/service-wordpress.html</loc>
+  <lastmod>2025-10-14T22:19:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://whizrsa.github.io/Elvis-Portfolio/service-seo-management.html</loc>
+  <lastmod>2025-10-14T22:19:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://whizrsa.github.io/Elvis-Portfolio/service-web-design.html</loc>
+  <lastmod>2025-10-14T22:19:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://whizrsa.github.io/Elvis-Portfolio/service-dotnet.html</loc>
+  <lastmod>2025-10-14T22:19:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://whizrsa.github.io/Elvis-Portfolio/service-cybersecurity.html</loc>
+  <lastmod>2025-10-14T22:19:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://whizrsa.github.io/Elvis-Portfolio/service-api-development.html</loc>
+  <lastmod>2025-10-14T22:19:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
