@@ -34,14 +34,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet"></noscript>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -67,7 +67,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets/img/elvis profile.png" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/elvis profile.png" alt="" class="img-fluid rounded-circle" loading="lazy" width="120" height="120">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
@@ -101,7 +101,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-background.png" alt="" data-aos="fade-in" class="">
+      <img src="assets/img/hero-background.png" alt="" data-aos="fade-in" class="" loading="eager" fetchpriority="high">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Elvis Chimuse</h2>
@@ -129,7 +129,7 @@ I’m continuously exploring new technologies and pushing the boundaries of what
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/elvis profile.png" class="img-fluid" alt="">
+            <img src="assets/img/elvis profile.png" class="img-fluid" alt="" loading="lazy">
           </div>
           <div class="col-lg-8 content">
             <h2>Software Developer &amp; WordPress Developer.</h2>
@@ -376,7 +376,7 @@ I’m continuously exploring new technologies and pushing the boundaries of what
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/MagogosHut.JPG" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/MagogosHut.JPG" class="img-fluid" alt="Magogos Hut - Catering Business Website" loading="lazy" width="400" height="300">
                 <div class="portfolio-info">
                   <h4>Magogos Hut</h4>
                   <p>A catering business website I developed for a client, designed to showcase their menu, services, and contact information with a clean and responsive layout.</p>
@@ -388,7 +388,7 @@ I’m continuously exploring new technologies and pushing the boundaries of what
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/tarmek.JPG" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/tarmek.JPG" class="img-fluid" alt="Tarmek - Logistics Company Website" loading="lazy" width="400" height="300">
                 <div class="portfolio-info">
                   <h4>Tarmek</h4>
                   <p>A logistics company website I developed for a client, designed to streamline transportation services and enhance customer engagemen</p>
@@ -400,7 +400,7 @@ I’m continuously exploring new technologies and pushing the boundaries of what
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/Sneaker City.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/Sneaker City.png" class="img-fluid" alt="Sneaker City - E-commerce Website" loading="lazy" width="400" height="300">
                 <div class="portfolio-info">
                   <h4>Sneaker City</h4>
                   <p>A sneaker e-commerce website I created to provide users with a smooth online shopping experience and a modern, responsive design.</p>
@@ -412,7 +412,7 @@ I’m continuously exploring new technologies and pushing the boundaries of what
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/Online Mart.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/Online Mart.png" class="img-fluid" alt="Online Mart - E-commerce Website" loading="lazy" width="400" height="300">
                 <div class="portfolio-info">
                   <h4>Online Mart</h4>
                   <p>Online Mart is an e-commerce website I developed during the early stages of my software development journey, showcasing my foundational skills in web design and functionality.</p>
@@ -424,7 +424,7 @@ I’m continuously exploring new technologies and pushing the boundaries of what
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/PMS.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/PMS.png" class="img-fluid" alt="Product Management System" loading="lazy" width="400" height="300">
                 <div class="portfolio-info">
                   <h4>Product Management System</h4>
                   <p>Developed a product management system</p>
@@ -436,10 +436,10 @@ I’m continuously exploring new technologies and pushing the boundaries of what
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/aquas catering.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/aquas catering.png" class="img-fluid" alt="Aquas Catering - E-commerce Website" loading="lazy" width="400" height="300">
                 <div class="portfolio-info">
                   <h4>Aquas Catering</h4>
-                  <p>An e-commerce website I’m proud of, developed and submitted as part of my college coursework to demonstrate my technical and design abilities.</p>
+                  <p>An e-commerce website I'm proud of, developed and submitted as part of my college coursework to demonstrate my technical and design abilities.</p>
                   <a href="assets/img/portfolio/aquas catering.png" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://github.com/whizrsa/AquasCatering" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -448,7 +448,7 @@ I’m continuously exploring new technologies and pushing the boundaries of what
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/flights api.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/flights api.png" class="img-fluid" alt="Flights API - RESTful API" loading="lazy" width="400" height="300">
                 <div class="portfolio-info">
                   <h4>Flights Api</h4>
                   <p>A RESTful API for managing flight data, allowing users to retrieve, add, update, and delete flight records with ease.</p>
@@ -460,7 +460,7 @@ I’m continuously exploring new technologies and pushing the boundaries of what
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/hangman.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/hangman.png" class="img-fluid" alt="Hangman Game - C# Windows Forms" loading="lazy" width="400" height="300">
                 <div class="portfolio-info">
                   <h4>Hangman</h4>
                   <p>I developed a Hangman game using C# and Windows Forms.</p>
@@ -474,7 +474,7 @@ I’m continuously exploring new technologies and pushing the boundaries of what
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/Diary App.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/Diary App.png" class="img-fluid" alt="Diary App - Web Application" loading="lazy" width="400" height="300">
                 <div class="portfolio-info">
                   <h4>Diary App</h4>
                   <p>A diary app developed using HTML, CSS and Javascript.</p>
@@ -614,7 +614,7 @@ I’m continuously exploring new technologies and pushing the boundaries of what
                 </div>
               </div><!-- End Info Item -->
 
-              <iframe src="https://www.google.com/maps?q=Atlantis%20Mall%20Cape%20Town&z=15&output=embed" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps?q=Atlantis%20Mall%20Cape%20Town&z=15&output=embed" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Atlantis Mall, Cape Town"></iframe>
             </div>
           </div>
 
@@ -679,20 +679,18 @@ I’m continuously exploring new technologies and pushing the boundaries of what
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/typed.js/typed.umd.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
 
   <!-- EmailJS -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+  <script defer>
     emailjs.init("ELylMfo2IqOx3UijS");
     function sendEmail(event) {
       event.preventDefault();
@@ -729,7 +727,7 @@ I’m continuously exploring new technologies and pushing the boundaries of what
   </script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 
