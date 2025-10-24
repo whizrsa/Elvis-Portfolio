@@ -689,41 +689,46 @@ I’m continuously exploring new technologies and pushing the boundaries of what
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
 
   <!-- EmailJS -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
-  <script defer>
-    emailjs.init("ELylMfo2IqOx3UijS");
-    function sendEmail(event) {
-      event.preventDefault();
-      const form = document.forms['submit-email'];
-      const msgEl = document.getElementById("msg");
-      const loadingEl = document.querySelector('.php-email-form .loading');
-      const sentEl = document.getElementById('sent-message');
-      const errorEl = document.getElementById('error-message');
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("ELylMfo2IqOx3UijS");
+      
+      window.sendEmail = function(event) {
+        event.preventDefault();
+        const form = document.forms['submit-email'];
+        const msgEl = document.getElementById("msg");
+        const loadingEl = document.querySelector('.php-email-form .loading');
+        const sentEl = document.getElementById('sent-message');
+        const errorEl = document.getElementById('error-message');
+        const reply_to = document.getElementById("email");
 
-      if (loadingEl) loadingEl.style.display = 'block';
-      if (sentEl) sentEl.style.display = 'none';
-      if (errorEl) errorEl.innerText = '';
+        if (loadingEl) loadingEl.style.display = 'block';
+        if (sentEl) sentEl.style.display = 'none';
+        if (errorEl) errorEl.innerText = '';
 
-      const params = {
-        from_name: document.getElementById("name").value,
-        from_email: document.getElementById("email").value,
-        message: document.getElementById("message").value,
+        const params = {
+          from_name: document.getElementById("name").value,
+          from_email: document.getElementById("email").value,
+          message: document.getElementById("message").value,
+          reply_to: reply_to.value,
+        };
+
+        emailjs.send("service_m2bvp1l", "template_6xsx27l", params)
+          .then((response) => {
+            console.log("SUCCESS", response);
+            if (msgEl) msgEl.innerText = "Your message has been sent successfully!";
+            if (sentEl) sentEl.style.display = 'block';
+            if (loadingEl) loadingEl.style.display = 'none';
+            if (form) form.reset();
+            setTimeout(() => { if (msgEl) msgEl.innerText = "" }, 5000);
+          }, (error) => {
+            console.log("FAILED", error);
+            if (errorEl) errorEl.innerText = "There was an error sending your message. Please try again.";
+            if (loadingEl) loadingEl.style.display = 'none';
+          });
       };
-
-      emailjs.send("service_m2bvp1l", "template_6xsx27l", params)
-        .then((response) => {
-          console.log("SUCCESS", response);
-          if (msgEl) msgEl.innerText = "Your message has been sent successfully!";
-          if (sentEl) sentEl.style.display = 'block';
-          if (loadingEl) loadingEl.style.display = 'none';
-          if (form) form.reset();
-          setTimeout(() => { if (msgEl) msgEl.innerText = "" }, 5000);
-        }, (error) => {
-          console.log("FAILED", error);
-          if (errorEl) errorEl.innerText = "There was an error sending your message. Please try again.";
-          if (loadingEl) loadingEl.style.display = 'none';
-        });
-    }
+    })();
   </script>
 
   <!-- Main JS File -->
