@@ -826,7 +826,16 @@ section,
 }
 
 .portfolio .portfolio-content img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
   transition: 0.3s;
+}
+
+@media (max-width: 575px) {
+  .portfolio .portfolio-content img {
+    height: 220px;
+  }
 }
 
 .portfolio .portfolio-content .portfolio-info {
