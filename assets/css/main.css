@@ -722,7 +722,7 @@ section,
 
 .case-thumb {
   width: 100%;
-  height: 220px;
+  height: clamp(160px, 38vw, 240px);
   object-fit: cover;
   border-radius: 14px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
@@ -730,7 +730,7 @@ section,
 }
 
 .case-placeholder {
-  height: 220px;
+  height: clamp(160px, 38vw, 240px);
   border-radius: 14px;
   border: 1px dashed color-mix(in srgb, var(--default-color), transparent 70%);
   background:
